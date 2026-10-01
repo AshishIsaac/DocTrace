@@ -1,0 +1,84 @@
+# ============================================================
+# Secrets - never commit these
+# ============================================================
+.env
+.env.*
+!.env.example
+service_account.json
+*service_account*.json
+*service-account*.json
+*credentials*.json
+client_secret*.json
+token.json
+token.pickle
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ============================================================
+# Your documents (only the placeholder README is committed)
+# ============================================================
+data/*
+!data/README.md
+
+# ============================================================
+# Generated search index (rebuilt with `python ingest.py`)
+# ============================================================
+vector_db/
+*.faiss
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.db
+*.pkl
+*.tmp
+ingest.lock
+*.zip
+
+# ============================================================
+# Python / virtual environments / tooling
+# ============================================================
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+*.log
+
+# Gradio
+flagged/
+.gradio/
+
+# ============================================================
+# Editors and operating systems
+# ============================================================
+.idea/
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+~$*
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/

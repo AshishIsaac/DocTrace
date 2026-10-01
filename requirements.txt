@@ -1,0 +1,20 @@
+# PyTorch is installed by the setup script (CPU or CUDA build, whichever fits your machine).
+# Installing by hand? `pip install torch --index-url https://download.pytorch.org/whl/cpu` first
+# keeps the download small.
+
+# Core
+sentence-transformers>=3.0,<7
+faiss-cpu>=1.8,<2
+numpy>=1.24,<3
+tqdm>=4.66
+requests>=2.31
+python-dotenv>=1.0
+gradio>=5.0,<7
+
+# File parsers
+pymupdf>=1.24.3        # PDF
+python-docx>=1.1       # Word .docx
+python-pptx>=0.6.23    # PowerPoint .pptx
+openpyxl>=3.1          # Excel .xlsx
+pillow>=10.0           # images
+pytesseract>=0.3.10    # OCR (also needs the Tesseract program, see README)

@@ -1,0 +1,3 @@
+# Only needed for `python ingest.py --gdrive`
+google-api-python-client>=2.100
+google-auth>=2.23

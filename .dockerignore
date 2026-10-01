@@ -1,0 +1,47 @@
+# Keep secrets, your documents and local state out of the Docker image
+# (data/ and the index are mounted as volumes instead - see docker-compose.yml)
+
+# secrets
+.env
+.env.*
+!.env.example
+service_account.json
+*service_account*.json
+*service-account*.json
+*credentials*.json
+client_secret*.json
+token.json
+token.pickle
+*.pem
+*.key
+*.p12
+*.pfx
+
+# documents and index
+data
+vector_db
+*.faiss
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.db
+*.pkl
+*.zip
+
+# local tooling
+.git
+.github
+.venv
+.venv*
+venv
+env
+__pycache__
+*.py[cod]
+.pytest_cache
+.ruff_cache
+.mypy_cache
+flagged
+.gradio
+.idea
+.vscode
+*.log
